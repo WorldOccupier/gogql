@@ -1,0 +1,16 @@
+type Climber {
+  name: String!
+  age: Int
+  shoes: Shoes
+  description: String!
+}
+
+enum Shoes {
+  LASPORTIVA
+  SCARPA
+  UNPARALLEL
+}
+
+type Query {
+  GetClimber(name: String!): Climber!
+}
